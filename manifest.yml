@@ -1,0 +1,14 @@
+---
+applications:
+- name: twdLoadTest
+  memory: 256m
+  instances: 1
+  #path: ./defaultServer
+  path: ./target/twdLoadTest-0.0.1
+  random-route: true
+  #buildpack: liberty-for-java
+  buildpack: java_buildpack
+  services:
+   - Auto-Scaling-1f
+  env:
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom

@@ -1,0 +1,7 @@
+<server>
+    <featureManager>
+    </featureManager>
+    <application name="twdLoadTest" location="twdLoadTest-0.0.1.war" type="war" context-root="/"/>
+    <webContainer deferServletLoad="false" />
+       <cdi12 enableImplicitBeanArchives='false'/>
+</server>
